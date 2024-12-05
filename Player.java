@@ -2,11 +2,17 @@ import java.util.Scanner;
 
 public class Player
 {
-  /* your code here - attributes */
+  public static Scanner inputScanner = new Scanner(System.in);
+  private String name;
+  private int score = 0;
 
-  /* your code here - constructor(s) */ 
+  public Player()
+  {
+    this.name = "Player";
+  }
 
-  /* your code here - accessor(s) */ 
-
-  /* your code here - mutator(s) */ 
+  public Player(String name)
+  {
+    this.name = name;
+  }
 }
