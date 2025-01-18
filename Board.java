@@ -7,7 +7,12 @@ public class  Board
   private String phrase;
   private int currentLetterValue; 
 
-  /* your code here - constructor(s) */ 
+  public Board()
+  {
+    phrase = loadPhrase();
+    solvedPhrase = "";
+    setLetterValue();
+  }
   
   /* your code here - accessor(s) */
   
