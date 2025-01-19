@@ -1,10 +1,10 @@
 import java.util.Scanner;
   
-public class PhraseSolver
+public class WordSolver
 {
   /* your code here - attributes */
 
-  public PhraseSolver()
+  public WordSolver()
   {
     /* your code here - constructor */
   }

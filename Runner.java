@@ -2,7 +2,7 @@ public class Runner
 {
   public static void main(String[] args) 
   {
-    PhraseSolver p = new PhraseSolver(); 
+    WordSolver p = new WordSolver(); 
     p.play();
   }
 
