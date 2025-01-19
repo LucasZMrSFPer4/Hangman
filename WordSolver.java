@@ -2,11 +2,13 @@ import java.util.Scanner;
   
 public class WordSolver
 {
-  
+  private int player1Score;
+  private int player2Score;
 
   public WordSolver()
   {
-    /* your code here - constructor */
+    player1Score = 0;
+    player2Score = 0;
   }
 
   /* your code here - accessor(s) */
