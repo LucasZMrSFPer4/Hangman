@@ -14,7 +14,20 @@ public class Board
     setLetterValue();
   }
   
-  /* your code here - accessor(s) */
+  public String getSolvedPhrase()
+  {
+    return solvedPhrase;
+  }
+
+  public int getCurrentLetterValue()
+  {
+    return currentLetterValue;
+  }
+
+  public String getPhrase()
+  {
+    return phrase;
+  }
   
   /* your code here - mutator(s)  */
 
