@@ -2,7 +2,7 @@ import java.util.Scanner;
   
 public class WordSolver
 {
-  /* your code here - attributes */
+  
 
   public WordSolver()
   {
