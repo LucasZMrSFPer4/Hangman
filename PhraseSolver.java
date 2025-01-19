@@ -17,8 +17,7 @@ public class PhraseSolver
     boolean correct = true;
     while (!solved) 
     {
-      
-      /* your code here - game logic */
+      System.out.println("Player " + currentPlayer + ", here is the phrase: " + secret.getSolvedPhrase());
       
       
       /* your code here - determine how game ends */
