@@ -1,7 +1,7 @@
 import java.io.File;
 import java.util.Scanner;
 
-public class  Board
+public class Board
 {
   private String solvedPhrase;
   private String phrase;
