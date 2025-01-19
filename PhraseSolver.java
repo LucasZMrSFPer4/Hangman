@@ -4,7 +4,10 @@ public class PhraseSolver
 {
   /* your code here - attributes */
 
-  /* your code here - constructor(s) */ 
+  public PhraseSolver()
+  {
+    /* your code here - constructor */
+  }
 
   /* your code here - accessor(s) */
   
