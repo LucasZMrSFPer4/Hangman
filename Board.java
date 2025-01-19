@@ -71,18 +71,11 @@ public class Board
         }
       }
     } catch (Exception e) { System.out.println("Error reading or parsing wordlist.txt"); }
-    
+
     for (int i = 0; i < tempWord.length(); i++)
     {
-      if (tempWord.substring(i, i + 1).equals(" "))
-      {
-        solvedWord += "  ";
-      }  
-      else
-      {
-        solvedWord += "_ ";
-      }
-    }  
+      solvedWord += "_ ";
+    }
     
     return tempWord;
   }  
