@@ -1,12 +1,15 @@
 import java.util.Scanner;
-
+  
 public class PhraseSolver
 {
-  private Board secret = new Board();
-  private Player player1 = new Player("Alice");
-  private Player player2 = new Player("Bob");
-  private int currentTurn = 1;
+  /* your code here - attributes */
+
+  /* your code here - constructor(s) */ 
+
+  /* your code here - accessor(s) */
   
+  /* your code here - mutator(s)  */
+
   public void play()
   {
     boolean solved = false;
@@ -17,11 +20,14 @@ public class PhraseSolver
     boolean correct = true;
     while (!solved) 
     {
-      System.out.println("Player " + currentPlayer + ", here is the phrase: " + secret.getSolvedPhrase());
+      
+      /* your code here - game logic */
       
       
       /* your code here - determine how game ends */
-      solved = true;
+      solved = true; 
     } 
+   
   }
+  
 }
