@@ -1,8 +1,3 @@
-/*
- * Activity 2.5.2
- *
- * A Board class the WordSolverGame
- */
 import java.util.Scanner;
 import java.io.File;
 
