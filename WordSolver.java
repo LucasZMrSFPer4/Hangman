@@ -19,7 +19,7 @@ public class WordSolver
     Scanner input = new Scanner(System.in);
     
     boolean correct = true;
-    while (!solved) 
+    while (!Board.solvedWord.equals(Board.word)) 
     {
       
       /* your code here - game logic */
