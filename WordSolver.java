@@ -2,6 +2,7 @@ import java.util.Scanner;
   
 public class WordSolver
 {
+  Board board = new Board();
   private int player1Score;
   private int player2Score;
 
@@ -13,21 +14,17 @@ public class WordSolver
 
   public void play()
   {
-    boolean solved = false;
     int currentPlayer = 1;
 
     Scanner input = new Scanner(System.in);
     
-    boolean correct = true;
-    while (!Board.solvedWord.equals(Board.word)) 
+    while (!board.solvedWord.equals(board.word)) 
     {
-      System.out.println();
+      System.out.println(board.wordLength());
       
       
       /* your code here - determine how game ends */
-      solved = true; 
     } 
-   
   }
   
 }
