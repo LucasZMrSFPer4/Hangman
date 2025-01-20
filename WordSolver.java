@@ -11,10 +11,6 @@ public class WordSolver
     player2Score = 0;
   }
 
-  /* your code here - accessor(s) */
-  
-  /* your code here - mutator(s)  */
-
   public void play()
   {
     boolean solved = false;
