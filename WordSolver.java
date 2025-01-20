@@ -21,8 +21,7 @@ public class WordSolver
     boolean correct = true;
     while (!Board.solvedWord.equals(Board.word)) 
     {
-      
-      /* your code here - game logic */
+      System.out.println();
       
       
       /* your code here - determine how game ends */
