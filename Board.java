@@ -8,8 +8,8 @@ import java.io.File;
 
 public class Board
 {
-  private static String solvedWord;
-  private static String word;
+  public static String solvedWord;
+  public static String word;
   private int length;
 
   public Board()
