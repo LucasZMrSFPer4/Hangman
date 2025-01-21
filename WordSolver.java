@@ -17,8 +17,6 @@ public class WordSolver
   public void play()
   {
     System.out.println(board.wordLength());
-    
-    int currentPlayer = 1;
 
     Scanner input = new Scanner(System.in);
     
