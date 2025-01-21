@@ -11,9 +11,4 @@ public class Player
     String name = input.nextLine();
     System.out.println("Welcome to Hangman, " + name + "!");
   }
-
-  public Player(String inputName)
-  {
-    name = inputName;
-  }
 }
