@@ -21,10 +21,12 @@ public class WordSolver
     System.out.println(board.wordLength());
 
     Scanner input = new Scanner(System.in);
+
+    String currentPlayer = player1Name;
     
     while (!board.solvedWord.equals(board.word)) 
     {
-      System.out.println(player1Name + ", it's your turn.");
+      System.out.println(currentPlayer + ", it's your turn.");
       board.guessWord();
     } 
   }
