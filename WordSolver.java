@@ -23,9 +23,14 @@ public class WordSolver
     while (!board.solvedWord.equals(board.word)) 
     {
       board.guessWord();
-      
-      
-      /* your code here - determine how game ends */
+      if (!board.solvedWord.equals(board.word))
+      {
+        System.out.println("Player 2's turn: ");
+      }
+      else
+      {
+        System.out.println("Still Player 1's turn: ");
+      }
     } 
   }
   
