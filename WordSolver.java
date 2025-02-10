@@ -4,7 +4,9 @@ public class WordSolver
 {
   Board board = new Board();
   Player player1 = new Player();
+  private String player1Name = player1.getName();
   Player player2 = new Player();
+  private String player2Name = player2.getName();
   private int player1Score;
   private int player2Score;
 
