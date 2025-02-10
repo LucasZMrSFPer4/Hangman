@@ -35,6 +35,6 @@ public class Board
         solvedWord = solvedWord.substring(0, i) + letter + solvedWord.substring(i + 1);
       }
     }
-    return "Solved word:" + solvedWord;
+    return "Solved word: " + solvedWord;
   }
 } 
