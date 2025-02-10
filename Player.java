@@ -12,7 +12,7 @@ public class Player
     System.out.println("Welcome to Hangman, " + name + "!");
   }
 
-  public void getName()
+  public String getName()
   {
     return name;
   }
