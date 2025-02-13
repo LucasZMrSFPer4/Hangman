@@ -31,7 +31,7 @@ public class Board
     letter = input.nextLine();
     for (int i = 0; i < length; i++)
     {
-      if (word.charAt(i) == letter.charAt(0))
+      if (word.substring(i, i + 1).equals(letter))
       {
         solvedWord = solvedWord.substring(0, i) + letter + solvedWord.substring(i + 1);
       }
