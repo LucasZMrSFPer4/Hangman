@@ -24,10 +24,16 @@ public class WordSolver
 
     String currentPlayer = player1Name;
     
-    while (!board.solvedWord.equals(board.word)) 
+    while (!Board.solvedWord.equals(Board.word)) 
     {
       System.out.println(currentPlayer + ", it's your turn.");
       board.guessWord();
+
+      if (Board.solvedWord.indexOf(Board.letter) != -1)
+      {
+        System.out.println("It's still your turn, " + currentPlayer);
+        board.guessWord();
+      }
     } 
   }
   

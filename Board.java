@@ -1,17 +1,18 @@
 import java.util.Scanner;
-import java.io.File;
 
 public class Board
 {
   public static String solvedWord;
   public static String word;
   private int length;
+  public static String letter;
 
   public Board()
   {
     word = WordProvider.getWord();
     solvedWord = "";
     length = word.length();
+    letter = "";
   }
   
   public String wordLength()
@@ -27,7 +28,7 @@ public class Board
   {
     Scanner input = new Scanner(System.in);
     System.out.println("Enter a letter: ");
-    String letter = input.nextLine();
+    letter = input.nextLine();
     for (int i = 0; i < length; i++)
     {
       if (word.charAt(i) == letter.charAt(0))
