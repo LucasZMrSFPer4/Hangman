@@ -26,13 +26,24 @@ public class WordSolver
     
     while (!Board.solvedWord.equals(Board.word)) 
     {
-      System.out.println(currentPlayer + ", it's your turn.");
+      System.out.println("It's your turn," + currentPlayer + ".");
       board.guessWord();
 
       if (Board.solvedWord.indexOf(Board.letter) != -1)
       {
-        System.out.println("It's still your turn, " + currentPlayer);
+        System.out.println("It's still your turn, " + currentPlayer + ".");
         board.guessWord();
+      }
+      else
+      {
+        if (currentPlayer.equals(player1Name))
+        {
+          currentPlayer = player2Name;
+        }
+        else
+        {
+          currentPlayer = player2Name;
+        }
       }
     } 
   }
