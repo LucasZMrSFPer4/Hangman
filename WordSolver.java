@@ -26,25 +26,35 @@ public class WordSolver
     
     while (!Board.solvedWord.equals(Board.word)) 
     {
-      System.out.println("It's your turn," + currentPlayer + ".");
+      System.out.println("It's your turn, " + currentPlayer + ".");
       board.guessWord();
 
-      if (Board.solvedWord.indexOf(Board.letter) != -1)
+      while (Board.solvedWord.indexOf(Board.letter) != -1)
       {
         System.out.println("It's still your turn, " + currentPlayer + ".");
         board.guessWord();
       }
+
+      if (currentPlayer.equals(player1Name))
+      {
+        currentPlayer = player2Name;
+      }
       else
       {
-        if (currentPlayer.equals(player1Name))
-        {
-          currentPlayer = player2Name;
-        }
-        else
-        {
-          currentPlayer = player1Name;
-        }
+        currentPlayer = player1Name;
       }
-    } 
+    }
+
+    while (Board.solvedWord.equals(Board.word))
+    {
+      if (currentPlayer.equals(player1Name))
+      {
+        player1Score++;
+      }
+      else
+      {
+        player2Score++;
+      }
+    }
   } 
 }
