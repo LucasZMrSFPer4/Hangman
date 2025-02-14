@@ -55,6 +55,11 @@ public class WordSolver
       {
         player2Score++;
       }
+
+      if (player1Score == 5 || player2Score == 5)
+      {
+        System.out.println(currentPlayer + " wins!");
+      }
     }
   } 
 }
