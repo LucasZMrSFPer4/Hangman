@@ -29,7 +29,7 @@ public class WordSolver
       System.out.println("It's your turn, " + currentPlayer + ".");
       System.out.println(board.guessWord());
 
-      while (board.solvedWord.indexOf(board.letter) != -1)
+      while (board.solvedWord.indexOf(board.letter) != -1 && !board.solvedWord.equals(board.word))
       {
         System.out.println("It's still your turn, " + currentPlayer + ".");
         System.out.println(board.guessWord());

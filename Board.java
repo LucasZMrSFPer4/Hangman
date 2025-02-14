@@ -9,7 +9,7 @@ public class Board
 
   public Board()
   {
-    word = WordProvider.getWord();
+    word = "hello";
     solvedWord = "";
     length = word.length();
     letter = "";
