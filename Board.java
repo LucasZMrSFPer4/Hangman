@@ -9,7 +9,7 @@ public class Board
 
   public Board()
   {
-    word = "hello";
+    word = WordProvider.getWord();
     solvedWord = "";
     length = word.length();
     letter = "";
@@ -21,7 +21,7 @@ public class Board
     {
       solvedWord += "_";
     }
-    return "Solved word:" + solvedWord;
+    return "Solved word: " + solvedWord;
   }
 
   public String guessWord()

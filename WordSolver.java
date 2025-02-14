@@ -18,48 +18,55 @@ public class WordSolver
 
   public void play()
   {
-    System.out.println(board.wordLength());
-
     Scanner input = new Scanner(System.in);
 
     String currentPlayer = player1Name;
     
-    while (!board.solvedWord.equals(board.word)) 
+    while (player1Score < 5 && player2Score < 5)
     {
-      System.out.println("It's your turn, " + currentPlayer + ".");
-      System.out.println(board.guessWord());
+      System.out.println(board.wordLength());
 
-      while (board.solvedWord.indexOf(board.letter) != -1 && !board.solvedWord.equals(board.word))
+      while (!board.solvedWord.equals(board.word)) 
       {
-        System.out.println("It's still your turn, " + currentPlayer + ".");
+        System.out.println("It's your turn, " + currentPlayer + ".");
         System.out.println(board.guessWord());
+
+        while (board.solvedWord.indexOf(board.letter) != -1 && !board.solvedWord.equals(board.word))
+        {
+          System.out.println("It's still your turn, " + currentPlayer + ".");
+          System.out.println(board.guessWord());
+        }
+
+        if (currentPlayer.equals(player1Name) && !board.solvedWord.equals(board.word))
+        {
+          currentPlayer = player2Name;
+        }
+        else if (currentPlayer.equals(player2Name) && !board.solvedWord.equals(board.word))
+        {
+          currentPlayer = player1Name;
+        }
       }
 
-      if (currentPlayer.equals(player1Name))
+      if (board.solvedWord.equals(board.word))
       {
-        currentPlayer = player2Name;
+        if (currentPlayer.equals(player1Name))
+        {
+          player1Score++;
+          System.out.println(player1Name + "'s score: " + player1Score);
+        }
+        else
+        {
+          player2Score++;
+          System.out.println(player2Name + "'s score: " + player2Score);
+        }
       }
-      else
-      {
-        currentPlayer = player1Name;
-      }
+
+      board = new Board();
     }
 
-    while (board.solvedWord.equals(board.word))
+    if (player1Score == 5 || player2Score == 5)
     {
-      if (currentPlayer.equals(player1Name))
-      {
-        player1Score++;
-      }
-      else
-      {
-        player2Score++;
-      }
-
-      if (player1Score == 5 || player2Score == 5)
-      {
-        System.out.println(currentPlayer + " wins!");
-      }
+      System.out.println(currentPlayer + " wins!");
     }
   } 
 }
