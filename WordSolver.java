@@ -4,8 +4,8 @@ public class WordSolver
 {
   Board board = new Board();
   Player player1 = new Player();
-  private String player1Name = player1.getName();
   Player player2 = new Player();
+  private String player1Name = player1.getName();
   private String player2Name = player2.getName();
   private int player1Score;
   private int player2Score;
@@ -24,15 +24,15 @@ public class WordSolver
 
     String currentPlayer = player1Name;
     
-    while (!Board.solvedWord.equals(Board.word)) 
+    while (!board.solvedWord.equals(board.word)) 
     {
       System.out.println("It's your turn, " + currentPlayer + ".");
-      board.guessWord();
+      System.out.println(board.guessWord());
 
-      while (Board.solvedWord.indexOf(Board.letter) != -1)
+      while (board.solvedWord.indexOf(board.letter) != -1)
       {
         System.out.println("It's still your turn, " + currentPlayer + ".");
-        board.guessWord();
+        System.out.println(board.guessWord());
       }
 
       if (currentPlayer.equals(player1Name))
@@ -45,7 +45,7 @@ public class WordSolver
       }
     }
 
-    while (Board.solvedWord.equals(Board.word))
+    while (board.solvedWord.equals(board.word))
     {
       if (currentPlayer.equals(player1Name))
       {
