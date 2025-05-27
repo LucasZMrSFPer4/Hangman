@@ -9,13 +9,11 @@ public class WordSolver
   private String player2Name = player2.getName();
   private int player1Score;
   private int player2Score;
-  private int wrongGuessesLeft;
 
   public WordSolver()
   {
     player1Score = 0;
     player2Score = 0;
-    wrongGuessesLeft = 6;
   }
 
   public void play()
@@ -26,15 +24,6 @@ public class WordSolver
     
     while (player1Score < 5 && player2Score < 5)
     {
-      System.out.println("___________");
-      System.out.println("|         |");
-      System.out.println("|         O");
-      System.out.println("|        \\|/");
-      System.out.println("|         |");
-      System.out.println("|        / \\");
-      System.out.println("|");
-      System.out.println("|__________\n");
-
       System.out.println(board.wordLength());
 
       while (!board.solvedWord.equals(board.word)) 
@@ -51,12 +40,10 @@ public class WordSolver
         if (currentPlayer.equals(player1Name) && !board.solvedWord.equals(board.word))
         {
           currentPlayer = player2Name;
-          wrongGuessesLeft --;
         }
         else if (currentPlayer.equals(player2Name) && !board.solvedWord.equals(board.word))
         {
           currentPlayer = player1Name;
-          wrongGuessesLeft --;
         }
       }
 
