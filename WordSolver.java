@@ -52,12 +52,12 @@ public class WordSolver
         if (currentPlayer.equals(player1Name))
         {
           player1Score++;
-          System.out.println(player1Name + "'s score: " + player1Score);
+          System.out.println("\n" + player1Name + "'s score: " + player1Score + "n");
         }
         else
         {
           player2Score++;
-          System.out.println(player2Name + "'s score: " + player2Score);
+          System.out.println("\n" + player2Name + "'s score: " + player2Score + "\n");
         }
       }
 
