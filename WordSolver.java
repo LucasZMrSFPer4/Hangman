@@ -9,11 +9,13 @@ public class WordSolver
   private String player2Name = player2.getName();
   private int player1Score;
   private int player2Score;
+  private int wrongGuessesLeft;
 
   public WordSolver()
   {
     player1Score = 0;
     player2Score = 0;
+    wrongGuessesLeft = 6;
   }
 
   public void play()
