@@ -42,10 +42,12 @@ public class WordSolver
         if (currentPlayer.equals(player1Name) && !board.solvedWord.equals(board.word))
         {
           currentPlayer = player2Name;
+          wrongGuessesLeft --;
         }
         else if (currentPlayer.equals(player2Name) && !board.solvedWord.equals(board.word))
         {
           currentPlayer = player1Name;
+          wrongGuessesLeft --;
         }
       }
 
