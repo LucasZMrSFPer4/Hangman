@@ -26,7 +26,7 @@ public class WordSolver
     
     while (player1Score < 5 && player2Score < 5)
     {
-      System.out.println();
+      System.out.println("  ");
 
       System.out.println(board.wordLength());
 
@@ -58,12 +58,14 @@ public class WordSolver
         if (currentPlayer.equals(player1Name))
         {
           player1Score++;
-          System.out.println("\n" + player1Name + "'s score: " + player1Score + "n");
+          System.out.println("\n" + player1Name + "'s score: " + player1Score);
+          System.out.println(player2Name + "'s score: " + player2Score + "\n");
         }
         else
         {
           player2Score++;
-          System.out.println("\n" + player2Name + "'s score: " + player2Score + "\n");
+          System.out.println("\n" + player1Name + "'s score: " + player1Score);
+          System.out.println(player2Name + "'s score: " + player2Score + "\n");
         }
       }
 
