@@ -6,6 +6,7 @@ public class Board
   public static String word;
   private int length;
   public static String letter;
+  public static int wrongGuessesLeft;
 
   public Board()
   {
@@ -13,6 +14,7 @@ public class Board
     solvedWord = "";
     length = word.length();
     letter = "";
+    wrongGuessesLeft = 6;
   }
   
   public String wordLength()
