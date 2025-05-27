@@ -26,7 +26,14 @@ public class WordSolver
     
     while (player1Score < 5 && player2Score < 5)
     {
-      System.out.println("  ");
+      System.out.println("___________");
+      System.out.println("|         |");
+      System.out.println("|         O");
+      System.out.println("|        \\|/");
+      System.out.println("|         |");
+      System.out.println("|        / \\");
+      System.out.println("|");
+      System.out.println("|__________\n");
 
       System.out.println(board.wordLength());
 
