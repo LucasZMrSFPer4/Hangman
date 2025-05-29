@@ -35,6 +35,8 @@ public class WordSolver
 
         while (board.solvedWord.indexOf(board.letter) != -1 && !board.solvedWord.equals(board.word))
         {
+          System.out.println(board.hangman());
+
           System.out.println("It's still your turn, " + currentPlayer + ".");
           System.out.println(board.guessWord());
         }
@@ -43,11 +45,13 @@ public class WordSolver
         {
           currentPlayer = player2Name;
           board.wrongGuessesLeft --;
+          System.out.println(board.hangman());
         }
         else if (currentPlayer.equals(player2Name) && !board.solvedWord.equals(board.word))
         {
           currentPlayer = player1Name;
           board.wrongGuessesLeft --;
+          System.out.println(board.hangman());
         }
       }
 
