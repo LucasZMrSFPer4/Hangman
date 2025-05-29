@@ -52,6 +52,13 @@ public class WordSolver
           board.wrongGuessesLeft --;
           System.out.println(board.hangman());
         }
+
+        if (board.wrongGuessesLeft == 0)
+        {
+          System.out.println("\nWord failed!");
+          System.out.println("\n" + player1Name + "'s score: " + player1Score);
+          System.out.println(player2Name + "'s score: " + player2Score + "\n");
+        }
       }
 
       if (board.solvedWord.equals(board.word))
