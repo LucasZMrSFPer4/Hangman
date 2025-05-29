@@ -19,13 +19,11 @@ public class WordSolver
   public void play()
   {
     Scanner input = new Scanner(System.in);
-
     String currentPlayer = player1Name;
     
     while (player1Score < 5 && player2Score < 5)
     {
       System.out.println(board.hangman());
-
       System.out.println(board.wordLength());
 
       while (!board.solvedWord.equals(board.word))
@@ -77,7 +75,6 @@ public class WordSolver
           System.out.println(player2Name + "'s score: " + player2Score + "\n");
         }
       }
-
       board = new Board();
     }
 
