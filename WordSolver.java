@@ -24,6 +24,8 @@ public class WordSolver
     
     while (player1Score < 5 && player2Score < 5)
     {
+      System.out.println(board.hangman());
+
       System.out.println(board.wordLength());
 
       while (!board.solvedWord.equals(board.word)) 
