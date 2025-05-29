@@ -28,7 +28,7 @@ public class WordSolver
 
       System.out.println(board.wordLength());
 
-      while (!board.solvedWord.equals(board.word)) 
+      while (!board.solvedWord.equals(board.word))
       {
         System.out.println("It's your turn, " + currentPlayer + ".");
         System.out.println(board.guessWord());
@@ -42,10 +42,12 @@ public class WordSolver
         if (currentPlayer.equals(player1Name) && !board.solvedWord.equals(board.word))
         {
           currentPlayer = player2Name;
+          board.wrongGuessesLeft --;
         }
         else if (currentPlayer.equals(player2Name) && !board.solvedWord.equals(board.word))
         {
           currentPlayer = player1Name;
+          board.wrongGuessesLeft --;
         }
       }
 
