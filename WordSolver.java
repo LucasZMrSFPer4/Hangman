@@ -57,6 +57,8 @@ public class WordSolver
           System.out.println("\n" + player1Name + "'s score: " + player1Score);
           System.out.println(player2Name + "'s score: " + player2Score + "\n");
           board = new Board();
+          System.out.println(board.hangman());
+          System.out.println(board.wordLength());
         }
       }
 
