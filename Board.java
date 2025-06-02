@@ -34,7 +34,7 @@ public class Board
     Scanner input = new Scanner(System.in);
     System.out.println("Enter a letter:");
     letter = input.nextLine();
-    System.out.println("\n");
+    System.out.print("\n");
     for (int i = 0; i < length; i++)
     {
       if (word.substring(i, i + 1).equals(letter))
