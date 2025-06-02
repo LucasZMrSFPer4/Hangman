@@ -6,7 +6,7 @@ public class Board
   public static String solvedWord;
   public String word;
   private int length;
-  public static String letter;
+  public String letter;
   public static int wrongGuessesLeft;
   public static ArrayList<String> usedLetters;
 
