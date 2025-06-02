@@ -53,7 +53,7 @@ public class WordSolver
 
         if (board.wrongGuessesLeft == 0)
         {
-          System.out.println("\nWord failed!");
+          System.out.println("Word failed!");
           System.out.println("\n" + player1Name + "'s score: " + player1Score);
           System.out.println(player2Name + "'s score: " + player2Score + "\n");
           board = new Board();
