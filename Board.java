@@ -1,3 +1,4 @@
+import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Board
@@ -7,6 +8,7 @@ public class Board
   private int length;
   public static String letter;
   public static int wrongGuessesLeft;
+  public static ArrayList<String> usedLetters = new ArrayList<String>();
 
   public Board()
   {
