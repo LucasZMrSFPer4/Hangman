@@ -4,11 +4,11 @@ import java.util.Scanner;
 public class Board
 {
   public static String solvedWord;
-  public static String word;
+  public String word;
   private int length;
   public static String letter;
   public static int wrongGuessesLeft;
-  public static ArrayList<String> usedLetters = new ArrayList<String>();
+  public static ArrayList<String> usedLetters;
 
   public Board()
   {
@@ -17,6 +17,7 @@ public class Board
     length = word.length();
     letter = "";
     wrongGuessesLeft = 6;
+    usedLetters = new ArrayList<String>();
   }
   
   public String wordLength()
