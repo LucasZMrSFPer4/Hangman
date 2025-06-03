@@ -77,7 +77,7 @@ public class Board
     }
   }
 
-  public ArrayList<String> listOfUsedLetters()
+  public static ArrayList<String> listOfUsedLetters()
   {
     return usedLetters;
   }

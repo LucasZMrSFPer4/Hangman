@@ -43,6 +43,8 @@ public class WordSolver
           currentPlayer = player2Name;
           board.wrongGuessesLeft --;
           System.out.println(board.hangman());
+          Board.usedLetters.add(board.letter);
+          System.out.println(Board.listOfUsedLetters());
         }
         else if (currentPlayer.equals(player2Name) && !board.solvedWord.equals(board.word))
         {
