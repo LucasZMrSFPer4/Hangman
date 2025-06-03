@@ -53,6 +53,7 @@ public class WordSolver
           currentPlayer = player1Name;
           board.wrongGuessesLeft --;
           System.out.println(board.hangman());
+          Board.usedLetters.add(board.letter);
           System.out.println(Board.usedLetters);
         }
 
