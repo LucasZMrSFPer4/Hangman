@@ -49,31 +49,31 @@ public class Board
   {
     if (wrongGuessesLeft == 6)
     {
-      return "__________\n|        |\n|        |\n|        0\n|       \\|/\n|       / \\\n|_________\n";
+      return "__________\n|        |\n|        |\n|        0\n|       \\|/\n|       / \\\n|_________";
     }
     else if (wrongGuessesLeft == 5)
     {
-      return "__________\n|        |\n|        |\n|        0\n|       \\|/\n|       /\n|_________\n";
+      return "__________\n|        |\n|        |\n|        0\n|       \\|/\n|       /\n|_________";
     }
     else if (wrongGuessesLeft == 4)
     {
-      return "__________\n|        |\n|        |\n|        0\n|       \\|/\n|\n|_________\n";
+      return "__________\n|        |\n|        |\n|        0\n|       \\|/\n|\n|_________";
     }
     else if (wrongGuessesLeft == 3)
     {
-      return "__________\n|        |\n|        |\n|        0\n|       \\|\n|\n|_________\n";
+      return "__________\n|        |\n|        |\n|        0\n|       \\|\n|\n|_________";
     }
     else if (wrongGuessesLeft == 2)
     {
-      return "__________\n|        |\n|        |\n|        0\n|        |\n|\n|_________\n";
+      return "__________\n|        |\n|        |\n|        0\n|        |\n|\n|_________";
     }
     else if (wrongGuessesLeft == 1)
     {
-      return "__________\n|        |\n|        |\n|        0\n|\n|\n|_________\n";
+      return "__________\n|        |\n|        |\n|        0\n|\n|\n|_________";
     }
     else
     {
-      return "__________\n|        |\n|        |\n|\n|\n|\n|_________\n";
+      return "__________\n|        |\n|        |\n|\n|\n|\n|_________";
     }
   }
 
