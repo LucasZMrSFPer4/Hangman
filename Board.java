@@ -76,9 +76,4 @@ public class Board
       return "__________\n|        |\n|        |\n|\n|\n|\n|_________";
     }
   }
-
-  public static ArrayList<String> listOfUsedLetters()
-  {
-    return usedLetters;
-  }
 } 
