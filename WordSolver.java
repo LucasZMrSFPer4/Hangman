@@ -25,6 +25,7 @@ public class WordSolver
     {
       System.out.println(board.hangman());
       System.out.println(Board.usedLetters);
+      System.out.println();
       System.out.println(board.wordLength());
 
       while (!board.solvedWord.equals(board.word))
@@ -36,6 +37,7 @@ public class WordSolver
         {
           System.out.println(board.hangman());
           System.out.println(Board.usedLetters);
+          System.out.println();
           System.out.println("It's still your turn, " + currentPlayer + ".");
           System.out.println(board.guessWord());
         }
@@ -47,6 +49,7 @@ public class WordSolver
           System.out.println(board.hangman());
           Board.usedLetters.add(board.letter);
           System.out.println(Board.usedLetters);
+          System.out.println();
         }
         else if (currentPlayer.equals(player2Name) && !board.solvedWord.equals(board.word))
         {
@@ -55,6 +58,7 @@ public class WordSolver
           System.out.println(board.hangman());
           Board.usedLetters.add(board.letter);
           System.out.println(Board.usedLetters);
+          System.out.println();
         }
 
         if (board.wrongGuessesLeft == 0)
@@ -65,6 +69,7 @@ public class WordSolver
           board = new Board();
           System.out.println(board.hangman());
           System.out.println(Board.usedLetters);
+          System.out.println();
           System.out.println(board.wordLength());
         }
       }
