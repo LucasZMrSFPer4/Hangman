@@ -23,16 +23,16 @@ public class WordSolver
     
     while (player1Score < 5 && player2Score < 5)
     {
+      System.out.println(board.wordLength());
       System.out.println(board.hangman());
       System.out.println(Board.usedLetters);
       System.out.println();
-      System.out.println(board.wordLength());
 
       while (!board.solvedWord.equals(board.word))
       {
         System.out.println("It's your turn, " + currentPlayer + ".");
         System.out.println(board.guessWord());
-        
+
         if (board.letter.length() != 1 || "abcdefghijklmnopqrstuvwxyz".indexOf(board.letter) == -1 || board.usedLetters.contains(board.letter))
         {
           System.out.println("\nInvalid answer! Try again!");
