@@ -10,7 +10,6 @@ public class Board
   public static int wrongGuessesLeft;
   public static ArrayList<String> usedRightLetters;
   public static ArrayList<String> usedWrongLetters;
-  public static int numOfGuesses;
 
   public Board()
   {
@@ -21,7 +20,6 @@ public class Board
     wrongGuessesLeft = 6;
     usedRightLetters = new ArrayList<String>();
     usedWrongLetters = new ArrayList<String>();
-    numOfGuesses = 0;
   }
   
   public String wordLength()
