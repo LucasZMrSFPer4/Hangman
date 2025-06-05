@@ -9,6 +9,7 @@ public class Board
   public String letter;
   public static int wrongGuessesLeft;
   public static ArrayList<String> usedLetters;
+  public static int numOfGuesses;
 
   public Board()
   {
@@ -18,6 +19,7 @@ public class Board
     letter = "";
     wrongGuessesLeft = 6;
     usedLetters = new ArrayList<String>();
+    numOfGuesses = 0;
   }
   
   public String wordLength()
