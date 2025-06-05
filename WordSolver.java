@@ -33,7 +33,7 @@ public class WordSolver
         System.out.println("It's your turn, " + currentPlayer + ".");
         System.out.println(board.guessWord());
 
-        if (board.letter.length() != 1 || "abcdefghijklmnopqrstuvwxyz".indexOf(board.letter) == -1 || board.usedLetters.contains(board.letter) || board.solvedWord.indexOf(board.letter) != -1)
+        if (board.letter.length() != 1 || "abcdefghijklmnopqrstuvwxyz".indexOf(board.letter) == -1 || board.usedLetters.contains(board.letter))
         {
           System.out.println("\nInvalid answer! Try again!");
           System.out.println(board.guessWord());
