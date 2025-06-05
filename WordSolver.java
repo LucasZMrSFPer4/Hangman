@@ -25,7 +25,7 @@ public class WordSolver
     {
       System.out.println(board.wordLength());
       System.out.println(board.hangman());
-      System.out.println(Board.usedLetters);
+      System.out.println(Board.usedWrongLetters);
       System.out.println();
 
       while (!board.solvedWord.equals(board.word))
@@ -33,7 +33,7 @@ public class WordSolver
         System.out.println("It's your turn, " + currentPlayer + ".");
         System.out.println(board.guessWord());
 
-        if (board.letter.length() != 1 || "abcdefghijklmnopqrstuvwxyz".indexOf(board.letter) == -1 || board.usedLetters.contains(board.letter))
+        if (board.letter.length() != 1 || "abcdefghijklmnopqrstuvwxyz".indexOf(board.letter) == -1 || board.usedWrongLetters.contains(board.letter))
         {
           System.out.println("\nInvalid answer! Try again!");
           System.out.println(board.guessWord());
@@ -42,7 +42,7 @@ public class WordSolver
         while (board.solvedWord.indexOf(board.letter) != -1 && !board.solvedWord.equals(board.word))
         {
           System.out.println(board.hangman());
-          System.out.println(Board.usedLetters);
+          System.out.println(Board.usedWrongLetters);
           System.out.println();
           System.out.println("It's still your turn, " + currentPlayer + ".");
           System.out.println(board.guessWord());
@@ -53,8 +53,8 @@ public class WordSolver
           currentPlayer = player2Name;
           board.wrongGuessesLeft --;
           System.out.println(board.hangman());
-          Board.usedLetters.add(board.letter);
-          System.out.println(Board.usedLetters);
+          Board.usedWrongLetters.add(board.letter);
+          System.out.println(Board.usedWrongLetters);
           System.out.println();
         }
         else if (currentPlayer.equals(player2Name) && !board.solvedWord.equals(board.word))
@@ -62,8 +62,8 @@ public class WordSolver
           currentPlayer = player1Name;
           board.wrongGuessesLeft --;
           System.out.println(board.hangman());
-          Board.usedLetters.add(board.letter);
-          System.out.println(Board.usedLetters);
+          Board.usedWrongLetters.add(board.letter);
+          System.out.println(Board.usedWrongLetters);
           System.out.println();
         }
 
@@ -74,7 +74,7 @@ public class WordSolver
           System.out.println(player2Name + "'s score: " + player2Score + "\n");
           board = new Board();
           System.out.println(board.hangman());
-          System.out.println(Board.usedLetters);
+          System.out.println(Board.usedWrongLetters);
           System.out.println();
           System.out.println(board.wordLength());
         }
