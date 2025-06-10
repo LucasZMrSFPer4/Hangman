@@ -30,7 +30,7 @@ public class WordSolver
 
       while (!board.solvedWord.equals(board.word))
       {
-        System.out.println("It's your turn, " + currentPlayer + ".")
+        System.out.println("It's your turn, " + currentPlayer + ".");
         System.out.println(board.guessWord());
 
         if (board.letter.length() != 1 || "abcdefghijklmnopqrstuvwxyz".indexOf(board.letter) == -1 || board.usedWrongLetters.contains(board.letter) || board.usedRightLetters.contains(board.letter))
