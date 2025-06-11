@@ -94,14 +94,20 @@ public class WordSolver
           player1Score ++;
           System.out.println("\n" + player1Name + "'s score: " + player1Score);
           System.out.println(player2Name + "'s score: " + player2Score + "\n");
-          currentPlayer = player2Name;
+          if (player1Score != 5 || player2Score != 5)
+          {
+            currentPlayer = player2Name;
+          }
         }
         else
         {
           player2Score ++;
           System.out.println("\n" + player1Name + "'s score: " + player1Score);
           System.out.println(player2Name + "'s score: " + player2Score + "\n");
-          currentPlayer = player1Name;
+          if (player1Score != 5 || player2Score != 5)
+          {
+            currentPlayer = player2Name;
+          }
         }
       }
       board = new Board();
