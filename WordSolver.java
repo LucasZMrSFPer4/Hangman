@@ -106,7 +106,7 @@ public class WordSolver
           System.out.println(player2Name + "'s score: " + player2Score + "\n");
           if (player1Score != 5 || player2Score != 5)
           {
-            currentPlayer = player2Name;
+            currentPlayer = player1Name;
           }
         }
       }
