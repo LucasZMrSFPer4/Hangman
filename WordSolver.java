@@ -94,12 +94,14 @@ public class WordSolver
           player1Score ++;
           System.out.println("\n" + player1Name + "'s score: " + player1Score);
           System.out.println(player2Name + "'s score: " + player2Score + "\n");
+          currentPlayer = player2Name;
         }
         else
         {
           player2Score ++;
           System.out.println("\n" + player1Name + "'s score: " + player1Score);
           System.out.println(player2Name + "'s score: " + player2Score + "\n");
+          currentPlayer = player1Name;
         }
       }
       board = new Board();
