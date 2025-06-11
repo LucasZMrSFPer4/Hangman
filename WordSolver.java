@@ -33,7 +33,7 @@ public class WordSolver
         System.out.println("It's your turn, " + currentPlayer + ".");
         System.out.println(board.guessWord());
 
-        if (board.letter.length() != 1 || "abcdefghijklmnopqrstuvwxyz".indexOf(board.letter) == -1 || board.usedWrongLetters.contains(board.letter) || board.usedRightLetters.contains(board.letter))
+        while (board.letter.length() != 1 || "abcdefghijklmnopqrstuvwxyz".indexOf(board.letter) == -1 || board.usedWrongLetters.contains(board.letter) || board.usedRightLetters.contains(board.letter))
         {
           System.out.println("\nInvalid answer! Try again!");
           System.out.println(board.guessWord());
@@ -48,7 +48,7 @@ public class WordSolver
           System.out.println("It's still your turn, " + currentPlayer + ".");
           System.out.println(board.guessWord());
 
-          if (board.letter.length() != 1 || "abcdefghijklmnopqrstuvwxyz".indexOf(board.letter) == -1 || board.usedWrongLetters.contains(board.letter) || board.usedRightLetters.contains(board.letter))
+          while (board.letter.length() != 1 || "abcdefghijklmnopqrstuvwxyz".indexOf(board.letter) == -1 || board.usedWrongLetters.contains(board.letter) || board.usedRightLetters.contains(board.letter))
           {
             System.out.println("\nInvalid answer! Try again!");
             System.out.println(board.guessWord());
