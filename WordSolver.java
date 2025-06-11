@@ -94,7 +94,7 @@ public class WordSolver
           player1Score ++;
           System.out.println("\n" + player1Name + "'s score: " + player1Score);
           System.out.println(player2Name + "'s score: " + player2Score + "\n");
-          if (player1Score != 5 || player2Score != 5)
+          if (player1Score != 5)
           {
             currentPlayer = player2Name;
           }
@@ -104,7 +104,7 @@ public class WordSolver
           player2Score ++;
           System.out.println("\n" + player1Name + "'s score: " + player1Score);
           System.out.println(player2Name + "'s score: " + player2Score + "\n");
-          if (player1Score != 5 || player2Score != 5)
+          if (player2Score != 5)
           {
             currentPlayer = player1Name;
           }
